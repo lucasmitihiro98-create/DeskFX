@@ -140,6 +140,22 @@ body{background:var(--bg);color:var(--tx);font-family:var(--sa);font-size:14px}
   .shdr{margin-bottom:10px!important}
   .tabbar{overflow-x:auto!important;width:100%!important}
 }
+</style><style>
+/* iOS click fix */
+.shell, .main, .content, .page, .topbar {-webkit-overflow-scrolling:touch;}
+.tbtn, .bsv, .bcl, .sbi, .popt, .tabb, .cki, .embtn, .mclose, .mobnav-btn, .ccell, button, select, input, textarea, a {
+  -webkit-tap-highlight-color:rgba(249,115,22,0.2);
+  cursor:pointer;
+  touch-action:manipulation;
+  position:relative;
+  z-index:1;
+}
+.mbg.op {z-index:9999!important;}
+.modal {z-index:10000!important; position:relative;}
+.mobnav {z-index:500!important; pointer-events:all!important;}
+.content {position:relative; z-index:1;}
+.topbar {position:relative; z-index:10;}
+.dlimit {pointer-events:none;}
 </style></head><body>
 <div class="shell">
 <div class="sb">
